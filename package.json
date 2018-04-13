@@ -1,0 +1,30 @@
+{
+  "name": "vb-chain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "dev": "nodemon ./app",
+    "start": "node ./app",
+    "dev-test": "nodemon dev-test"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "crypto-js": "^3.1.9-1",
+    "elliptic": "^6.4.0",
+    "express": "^4.16.3",
+    "uuid": "^3.2.1",
+    "ws": "^5.1.1"
+  }
+}
