@@ -95,15 +95,6 @@ class P2pServer{
     this.sockets.forEach(this.sendClearTransactions);
   }
 
-
-  addPeer(peer){
-    if (peers.indexOf(peer) !== -1) return;
-
-    peers.push(peer)
-    const socket = new Websocket(peer)
-    socket.on('open', () => this.connectSocket(socket))
-  }
-
 }
 
 module.exports = P2pServer;
